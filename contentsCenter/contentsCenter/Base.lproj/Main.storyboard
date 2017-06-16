@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ly1-vQ-5o3">
+                                <rect key="frame" x="67" y="84" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9B-zP-qxl">
+                                <rect key="frame" x="80" y="295" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="9TL-Rd-VEz"/>
+                                    <constraint firstAttribute="height" constant="128" id="z8Z-OO-IBa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H9B-zP-qxl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="8Kq-6X-8ZW"/>
+                            <constraint firstItem="H9B-zP-qxl" firstAttribute="top" secondItem="ly1-vQ-5o3" secondAttribute="bottom" constant="83" id="EYx-Jn-Mdl"/>
+                            <constraint firstItem="ly1-vQ-5o3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="KKW-LB-sUa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H9B-zP-qxl" secondAttribute="trailing" constant="39" id="Xsl-q2-6SB"/>
+                            <constraint firstItem="H9B-zP-qxl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="295" id="j8S-79-oo1"/>
+                            <constraint firstItem="ly1-vQ-5o3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="mDc-Uv-g9Z"/>
+                            <constraint firstItem="ly1-vQ-5o3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t5l-Ou-QOE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="ly1-vQ-5o3" id="5VN-De-7jh"/>
+                        <outlet property="button2" destination="H9B-zP-qxl" id="bRP-t7-Qmh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1LL-6A-DHY">
+                                <rect key="frame" x="60" y="171" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="OZR-oz-UJa"/>
+                                    <constraint firstAttribute="height" constant="100" id="cil-3c-KvH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Luf-mw-8Zy">
+                                <rect key="frame" x="60" y="273" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="P5d-zc-cDk"/>
+                                    <constraint firstAttribute="width" constant="100" id="lLT-R1-ys4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPL-6U-ftD">
+                                <rect key="frame" x="226" y="171" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HPL-6U-ftD" firstAttribute="bottom" secondItem="1LL-6A-DHY" secondAttribute="bottom" id="0Um-IV-RT8"/>
+                            <constraint firstItem="1LL-6A-DHY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="151" id="2cG-vH-6ct"/>
+                            <constraint firstItem="Luf-mw-8Zy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="DIn-4t-Wqp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HPL-6U-ftD" secondAttribute="trailing" constant="33" id="EBt-qH-Vif"/>
+                            <constraint firstItem="HPL-6U-ftD" firstAttribute="leading" secondItem="1LL-6A-DHY" secondAttribute="trailing" constant="66" id="KLe-nj-N4a"/>
+                            <constraint firstItem="HPL-6U-ftD" firstAttribute="top" secondItem="1LL-6A-DHY" secondAttribute="top" id="L8v-up-YHx"/>
+                            <constraint firstItem="Luf-mw-8Zy" firstAttribute="top" secondItem="1LL-6A-DHY" secondAttribute="bottom" constant="2" id="Rtb-1i-0bX"/>
+                            <constraint firstItem="1LL-6A-DHY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="ZrG-JO-MLn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="1LL-6A-DHY" id="T1c-dq-bGW"/>
+                        <outlet property="button2" destination="Luf-mw-8Zy" id="nn5-NG-mMU"/>
+                        <outlet property="containerView" destination="HPL-6U-ftD" id="rCt-0u-bDr"/>
+                        <outlet property="layerView1" destination="1LL-6A-DHY" id="RXX-8v-P8V"/>
+                        <outlet property="layerView2" destination="Luf-mw-8Zy" id="fnb-Gs-y5s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
